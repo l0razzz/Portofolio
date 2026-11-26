@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="el" data-lang="el" data-theme="light" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorentso Aligia — Junior Web Developer, Video Editor &amp; Social Media</title>
+  <meta name="description" content="Portfolio &amp; βιογραφικό του Lorentso Aligia. Απόφοιτος Εφαρμογών Πληροφορικής (ΣΑΕΚ), κατασκευή ιστοσελίδων (HTML/CSS), video editing, διαχείριση social media &amp; εμπειρία KYC.">
+  <!-- Social Share Preview (Open Graph & Twitter / X / LinkedIn / Instagram DM / Viber) -->
+  <meta property="og:title" content="Lorentso Aligia — Portfolio &amp; CV (EL / EN)">
+  <meta property="og:description" content="Junior Web Developer, Video Editor &amp; Social Media Manager in Athens. Websites (HTML/CSS), Video Editing, Social Media &amp; Digital Onboarding (KYC).">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lorentso Aligia">
+  <meta property="og:locale" content="el_GR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:image" content="assets/img/og-preview.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lorentso Aligia — Junior Web Developer, Video Editor &amp; Social Media Portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lorentso Aligia — Portfolio &amp; CV (EL / EN)">
+  <meta name="twitter:description" content="Junior Web Developer, Video Editor &amp; Social Media Manager in Athens. Seeking Internship &amp; Creative Projects.">
+  <meta name="twitter:image" content="assets/img/og-preview.jpg">
+  <meta name="theme-color" content="#f5f1ea">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23141924'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='26' fill='%23f5f1ea'%3ELA%3C/text%3E%3Ccircle cx='51' cy='15' r='5' fill='%23e54819'/%3E%3C/svg%3E">
+
+  <!-- Fonts with full Greek & Latin character support -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Literata:ital,opsz,wght@1,7..72,400;1,7..72,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+  <!-- Subtle intro curtain -->
+  <div class="intro" id="intro-screen" aria-hidden="true">
+    <div class="intro__inner">
+      <span class="intro__mark">LA</span>
+      <span>Lorentso Aligia<span class="intro__dot">.</span></span>
+    </div>
+  </div>
+
+  <a href="#main-content" class="skip-link" data-i18n="skip">Μετάβαση στο περιεχόμενο</a>
+  <div class="progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ====================================================================
+       HEADER & NAVIGATION
+       ==================================================================== -->
+  <header class="header" id="site-header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" id="logo-link" aria-label="Lorentso Aligia — Home">
+        <span class="logo__mark" aria-hidden="true">LA</span>
+        <span class="logo__text">Lorentso Aligia<span class="logo__dot">.</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about" class="nav__link" data-i18n="nav.about">Σχετικά</a>
+        <a href="#services" class="nav__link" data-i18n="nav.services">Υπηρεσίες</a>
+        <a href="#work" class="nav__link" data-i18n="nav.work">Δουλειές</a>
+        <a href="#experience" class="nav__link" data-i18n="nav.experience">Εμπειρία &amp; CV</a>
+        <a href="#skills" class="nav__link" data-i18n="nav.skills">Δεξιότητες</a>
+        <a href="#contact" class="nav__link" data-i18n="nav.contact">Επικοινωνία</a>
+      </nav>
+
+      <div class="header__controls">
+        <!-- Bilingual switcher -->
+        <div class="lang-switch" role="group" aria-label="Language switch">
+          <span class="lang-switch__thumb" aria-hidden="true"></span>
+          <button type="button" class="lang-switch__btn" id="lang-el" data-lang-btn="el" aria-pressed="true">EL</button>
+          <button type="button" class="lang-switch__btn" id="lang-en" data-lang-btn="en" aria-pressed="false">EN</button>
+        </div>
+
+        <!-- Theme switcher -->
+        <button type="button" class="icon-btn theme-toggle" id="theme-toggle" data-i18n-aria="nav.themeLabel" aria-label="Εναλλαγή φωτεινού/σκοτεινού θέματος">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32 1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn--sm header__cta" id="header-cta">
+          <span data-i18n="nav.cta">Ας μιλήσουμε</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+
+        <button type="button" class="icon-btn burger" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" data-i18n-aria="nav.menuLabel" aria-label="Άνοιγμα μενού">
+          <span class="burger__lines">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile full-screen menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu__list">
+      <li><a href="#about" class="mobile-menu__link"><span>01</span><b data-i18n="nav.about">Σχετικά</b></a></li>
+      <li><a href="#services" class="mobile-menu__link"><span>02</span><b data-i18n="nav.services">Υπηρεσίες</b></a></li>
+      <li><a href="#work" class="mobile-menu__link"><span>03</span><b data-i18n="nav.work">Δουλειές</b></a></li>
+      <li><a href="#experience" class="mobile-menu__link"><span>04</span><b data-i18n="nav.experience">Εμπειρία &amp; CV</b></a></li>
+      <li><a href="#skills" class="mobile-menu__link"><span>05</span><b data-i18n="nav.skills">Δεξιότητες</b></a></li>
+      <li><a href="#contact" class="mobile-menu__link"><span>06</span><b data-i18n="nav.contact">Επικοινωνία</b></a></li>
+    </ul>
+    <div class="mobile-menu__foot">
+      <span>Lorentso Aligia · Athens, GR</span>
+      <div style="display:flex; gap:1rem;">
+        <a href="https://www.instagram.com/lorentso.al/" target="_blank" rel="noopener noreferrer" class="link-arrow">Instagram</a>
+        <a href="https://www.linkedin.com/in/lorentso-aligia-5568723a0/" target="_blank" rel="noopener noreferrer" class="link-arrow">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==================================================================
+         HERO
+         ================================================================== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="hero__meta">
+              <span class="eyebrow">
+                <span class="eyebrow__num">00</span>
+                <span class="eyebrow__rule" aria-hidden="true"></span>
+                <span data-i18n="hero.eyebrow">PORTFOLIO &amp; CV</span>
+              </span>
+              <span class="live-clock" id="hero-clock" aria-live="off">
+                <span class="live-clock__dot" aria-hidden="true"></span>
+                <span id="hero-clock-time">Αθήνα · --:-- EET</span>
+                <span class="live-clock__sep" aria-hidden="true">·</span>
+                <span class="live-clock__status" id="hero-clock-status" data-i18n="clock.available">Διαθέσιμος</span>
+              </span>
+            </div>
+
+            <h1 class="hero__title" id="hero-heading" data-i18n-html="hero.titleHtml">
+              <span class="line"><span>Ιστοσελίδες, βίντεο</span></span>
+              <span class="line"><span>και <em>ψηφιακή</em></span></span>
+              <span class="line"><span>δημιουργία.</span></span>
+            </h1>
+
+            <div class="role-rotator" aria-live="polite">
+              <span class="role-rotator__prefix" data-i18n="hero.rolePrefix">Ρόλοι</span>
+              <span class="role-rotator__window">
+                <span class="role-rotator__word" id="role-word">Junior Web Developer</span>
+              </span>
+            </div>
+
+            <p class="hero__lead" data-i18n-html="hero.leadHtml">
+              Είμαι ο <strong>Lorentso Aligia</strong> — Junior Web Developer &amp; Δημιουργός Πολυμέσων, απόφοιτος Εφαρμογών Πληροφορικής (ΣΑΕΚ). Δημιουργώ λειτουργικά websites, κάνω video editing, διαχειρίζομαι social media και αναζητώ πρακτική άσκηση ή νέες δημιουργικές συνεργασίες.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#work" class="btn btn--accent" id="hero-work-btn">
+                <span data-i18n="hero.ctaPrimary">Δες τις δουλειές</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+              </a>
+              <a href="#contact" class="btn" id="hero-contact-btn">
+                <span data-i18n="hero.ctaSecondary">Επικοινωνία</span>
+              </a>
+              <button type="button" class="btn btn--ghost" id="hero-cv-btn" data-print-cv>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+                <span data-i18n="hero.ctaCv">Λήψη / PDF CV</span>
+              </button>
+            </div>
+
+            <div class="hero__quick">
+              <button type="button" class="quick-copy" id="hero-copy-email" data-copy-email="lorentsoaligia@gmail.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span>lorentsoaligia@gmail.com</span>
+              </button>
+              <div class="quick-links">
+                <a href="https://www.instagram.com/lorentso.al/" target="_blank" rel="noopener noreferrer" id="hero-instagram">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                  <span>@lorentso.al</span>
+                </a>
+                <a href="https://www.linkedin.com/in/lorentso-aligia-5568723a0/" target="_blank" rel="noopener noreferrer" id="hero-linkedin">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.32-.03-3.02-1.84-3.02-1.84 0-2.12 1.44-2.12 2.92V21h-4V9z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__media">
+            <div class="hero__frame">
+              <img src="assets/img/hero.jpg" width="1200" height="896" alt="Creative developer and multimedia workstation showing web code, video editing timeline and social media preview" loading="eager">
+            </div>
+
+            <div class="float-card float-card--status">
+              <span class="status-dot" aria-hidden="true"></span>
+              <div>
+                <strong data-i18n="hero.cardStatusTitle">Αναζήτηση Πρακτικής &amp; Projects</strong>
+                <small data-i18n="hero.cardStatusSub">Αθήνα · On-site &amp; Remote</small>
+              </div>
+            </div>
+
+            <div class="float-card float-card--grade">
+              <span class="float-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </span>
+              <div>
+                <strong data-i18n="hero.cardGradeTitle">18/20 Άριστα</strong>
+                <small data-i18n="hero.cardGradeSub">Λύκειο &amp; Απόφοιτος ΣΑΕΚ</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key highlights strip -->
+        <div class="stats reveal">
+          <div class="stat">
+            <div class="stat__value"><span data-count="18">18</span><sup>/20</sup></div>
+            <p class="stat__label" data-i18n="hero.stat1Label">Αποφοίτηση Λυκείου με άριστα &amp; σπουδές ΣΑΕΚ</p>
+          </div>
+          <div class="stat">
+            <div class="stat__value"><span data-count="15">15</span><sup>+</sup></div>
+            <p class="stat__label" data-i18n="hero.stat2Label">Τράπεζες &amp; μεγάλα brands σε έργα KYC</p>
+          </div>
+          <div class="stat">
+            <div class="stat__value"><span data-count="1">1</span><span data-i18n="hero.stat3Unit">+ έτος</span></div>
+            <p class="stat__label" data-i18n="hero.stat3Label">Εμπειρία σε Customer Service &amp; Digital Onboarding</p>
+          </div>
+          <div class="stat">
+            <div class="stat__value">EL<sup>/EN</sup></div>
+            <p class="stat__label" data-i18n="hero.stat4Label">Δίγλωσση επικοινωνία, websites &amp; περιεχόμενο</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         CLIENT / ORGANIZATION MARQUEE (FROM KYC EXPERIENCE)
+         ================================================================== -->
+    <div class="marquee" aria-label="Supported organizations">
+      <p class="marquee__label" data-i18n="marquee.label">ΟΡΓΑΝΙΣΜΟΙ ΠΟΥ ΥΠΟΣΤΗΡΙΞΑ ΣΕ ΕΡΓΑ KYC &amp; DIGITAL ONBOARDING (INTELLISOLUTIONS)</p>
+      <div class="marquee__viewport">
+        <div class="marquee__track">
+          <div class="marquee__group">
+            <span class="marquee__item">Eurobank</span>
+            <span class="marquee__item">Piraeus Bank</span>
+            <span class="marquee__item">Alpha Bank</span>
+            <span class="marquee__item">Attica Bank</span>
+            <span class="marquee__item">BFF Bank</span>
+            <span class="marquee__item">Worldline</span>
+            <span class="marquee__item">PayLink (WorldBridge)</span>
+            <span class="marquee__item">CashPlus</span>
+            <span class="marquee__item">TMEDE</span>
+            <span class="marquee__item">Aegean Airlines</span>
+            <span class="marquee__item">Cosmote</span>
+            <span class="marquee__item">Epic Cyprus</span>
+            <span class="marquee__item">Stoiximan</span>
+            <span class="marquee__item">OPAP</span>
+            <span class="marquee__item">SuperBet</span>
+            <span class="marquee__item">NetBet</span>
+          </div>
+          <div class="marquee__group" aria-hidden="true">
+            <span class="marquee__item">Eurobank</span>
+            <span class="marquee__item">Piraeus Bank</span>
+            <span class="marquee__item">Alpha Bank</span>
+            <span class="marquee__item">Attica Bank</span>
+            <span class="marquee__item">BFF Bank</span>
+            <span class="marquee__item">Worldline</span>
+            <span class="marquee__item">PayLink (WorldBridge)</span>
+            <span class="marquee__item">CashPlus</span>
+            <span class="marquee__item">TMEDE</span>
+            <span class="marquee__item">Aegean Airlines</span>
+            <span class="marquee__item">Cosmote</span>
+            <span class="marquee__item">Epic Cyprus</span>
+            <span class="marquee__item">Stoiximan</span>
+            <span class="marquee__item">OPAP</span>
+            <span class="marquee__item">SuperBet</span>
+            <span class="marquee__item">NetBet</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================================================================
+         01 — ABOUT
+         ================================================================== -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__sticky reveal">
+            <span class="eyebrow">
+              <span class="eyebrow__num">01</span>
+              <span class="eyebrow__rule" aria-hidden="true"></span>
+              <span data-i18n="about.eyebrow">ΣΧΕΤΙΚΑ ΜΕ ΕΜΕΝΑ</span>
+            </span>
+            <h2 class="about__statement" id="about-heading" data-i18n-html="about.statementHtml">
+              Καθαρός κώδικας, <em>δυνατή εικόνα</em> και ουσιαστική επικοινωνία.
+            </h2>
+
+            <dl class="facts">
+              <div class="fact">
+                <dt data-i18n="about.fact1Label">Τοποθεσία</dt>
+                <dd data-i18n="about.fact1Value">Αθήνα, Αττική, Ελλάδα</dd>
+              </div>
+              <div class="fact">
+                <dt data-i18n="about.fact2Label">Στόχος</dt>
+                <dd data-i18n="about.fact2Value">Πρακτική Άσκηση &amp; Freelance</dd>
+              </div>
+              <div class="fact">
+                <dt data-i18n="about.fact3Label">Σπουδές</dt>
+                <dd data-i18n="about.fact3Value">ΣΑΕΚ Εφαρμογές Πληροφορικής</dd>
+              </div>
+              <div class="fact">
+                <dt data-i18n="about.fact4Label">Γλώσσες</dt>
+                <dd data-i18n="about.fact4Value">Ελληνικά &amp; Αγγλικά</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="about__body reveal" style="--d: 0.1s">
+            <p data-i18n-html="about.p1Html">
+              Είμαι πρόσφατος απόφοιτος <strong>Εφαρμογών Πληροφορικής (ΣΑΕΚ)</strong> με πάθος για την ψηφιακή δημιουργία και τις τεχνολογίες του web. Αποφοίτησα από το Λύκειο με <strong>άριστα (18/20)</strong>, στοιχείο που αντικατοπτρίζει τη συνέπεια, την αφοσίωση και τη διάθεσή μου για διαρκή εξέλιξη.
+            </p>
+            <p data-i18n-html="about.p2Html">
+              Με γερές βάσεις σε <strong>HTML &amp; CSS</strong> και ιδιαίτερη αγάπη για το <strong>video editing</strong> και τα ψηφιακά μέσα, απολαμβάνω να φτιάχνω λειτουργικές ιστοσελίδες, να μοντάρω σύγχρονα βίντεο και να διαχειρίζομαι social media με ξεκάθαρη αισθητική και ρυθμό.
+            </p>
+            <p data-i18n-html="about.p3Html">
+              Η σημερινή μου θέση στο Customer Service (IntelliSolutions) μού έχει προσφέρει πολύτιμα soft skills — κατανόηση αναγκών πελάτη, ακρίβεια, τεχνική καθοδήγηση και ομαδικότητα. Αναζητώ μια <strong>απαιτητική πρακτική άσκηση</strong> όπου θα εφαρμόσω τις δεξιότητές μου σε κώδικα και πολυμέσα σε πραγματικές συνθήκες.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         02 — SERVICES
+         ================================================================== -->
+    <section class="section section--alt" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow__num">02</span>
+              <span class="eyebrow__rule" aria-hidden="true"></span>
+              <span data-i18n="services.eyebrow">ΥΠΗΡΕΣΙΕΣ &amp; ΔΡΑΣΤΗΡΙΟΤΗΤΕΣ</span>
+            </span>
+            <h2 class="section-title" id="services-heading" data-i18n-html="services.titleHtml">
+              Τι μπορώ να <em>δημιουργήσω</em>.
+            </h2>
+          </div>
+          <p class="section-lead" data-i18n="services.lead">
+            Από τον σχεδιασμό και την κατασκευή μιας ιστοσελίδας μέχρι το μοντάζ βίντεο και τη συνολική παρουσία στα social media.
+          </p>
+        </div>
+
+        <div class="services">
+          <!-- Service 01: Websites -->
+          <article class="service reveal">
+            <div class="service__top">
+              <span class="service__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>
+              <span class="service__num">01</span>
+            </div>
+            <h3 class="service__title" data-i18n="services.s1Title">Κατασκευή Ιστοσελίδων</h3>
+            <p class="service__text" data-i18n="services.s1Text">
+              Σχεδιασμός και υλοποίηση καθαρών, responsive ιστοσελίδων με HTML5, CSS3 και JavaScript — portfolios, επαγγελματικές σελίδες και landing pages που δείχνουν άψογα σε κινητό και υπολογιστή.
+            </p>
+            <ul class="service__list">
+              <li data-i18n="services.s1Tag1">HTML5 &amp; CSS3</li>
+              <li data-i18n="services.s1Tag2">Responsive Design</li>
+              <li data-i18n="services.s1Tag3">Landing Pages</li>
+              <li data-i18n="services.s1Tag4">Portfolios</li>
+            </ul>
+          </article>
+
+          <!-- Service 02: Video Editing -->
+          <article class="service reveal" style="--d: 0.08s">
+            <div class="service__top">
+              <span class="service__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3V9z"/></svg>
+              </span>
+              <span class="service__num">02</span>
+            </div>
+            <h3 class="service__title" data-i18n="services.s2Title">Video Editing &amp; Μοντάζ</h3>
+            <p class="service__text" data-i18n="services.s2Text">
+              Δημιουργικό μοντάζ για Instagram Reels, TikTok, YouTube Shorts και προωθητικά βίντεο με προσοχή στον ρυθμό, το color grading, τη μουσική επένδυση και τους δυναμικούς υπότιτλους.
+            </p>
+            <ul class="service__list">
+              <li data-i18n="services.s2Tag1">Reels &amp; TikTok</li>
+              <li data-i18n="services.s2Tag2">Color Grading</li>
+              <li data-i18n="services.s2Tag3">Audio Sync</li>
+              <li data-i18n="services.s2Tag4">Υπότιτλοι &amp; Ρυθμός</li>
+            </ul>
+          </article>
+
+          <!-- Service 03: Social Media -->
+          <article class="service reveal" style="--d: 0.14s">
+            <div class="service__top">
+              <span class="service__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
+              </span>
+              <span class="service__num">03</span>
+            </div>
+            <h3 class="service__title" data-i18n="services.s3Title">Διαχείριση Social Media</h3>
+            <p class="service__text" data-i18n="services.s3Text">
+              Σχεδιασμός πλάνου περιεχομένου, αισθητική συνοχή στο προφίλ, δημιουργία posts/carousels &amp; stories και καθημερινή φροντίδα της ψηφιακής εικόνας μιας επιχείρησης ή δημιουργού.
+            </p>
+            <ul class="service__list">
+              <li data-i18n="services.s3Tag1">Content Calendar</li>
+              <li data-i18n="services.s3Tag2">Visual Grid</li>
+              <li data-i18n="services.s3Tag3">Posts &amp; Stories</li>
+              <li data-i18n="services.s3Tag4">Επικοινωνία Κοινού</li>
+            </ul>
+          </article>
+
+          <!-- Service 04: Hardware & Digital Support -->
+          <article class="service reveal" style="--d: 0.2s">
+            <div class="service__top">
+              <span class="service__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3m6-3v3M9 20v3m6-3v3M20 9h3m-3 6h3M1 9h3m-3 6h3"/></svg>
+              </span>
+              <span class="service__num">04</span>
+            </div>
+            <h3 class="service__title" data-i18n="services.s4Title">Τεχνική Υποστήριξη &amp; Hardware</h3>
+            <p class="service__text" data-i18n="services.s4Text">
+              Γνώση υπολογιστικού hardware, στήσιμο συστημάτων και τεχνική υποστήριξη χρηστών σε ψηφιακές πλατφόρμες, ρυθμίσεις κάμερας, αρχεία και πλοήγηση με υπομονή και σαφήνεια.
+            </p>
+            <ul class="service__list">
+              <li data-i18n="services.s4Tag1">Computer Hardware</li>
+              <li data-i18n="services.s4Tag2">Troubleshooting</li>
+              <li data-i18n="services.s4Tag3">Digital Onboarding</li>
+              <li data-i18n="services.s4Tag4">Υποστήριξη Χρηστών</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         03 — WORK / PORTFOLIO SHOWCASE
+         ================================================================== -->
+    <section class="section" id="work" aria-labelledby="work-heading">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow__num">03</span>
+              <span class="eyebrow__rule" aria-hidden="true"></span>
+              <span data-i18n="work.eyebrow">ΕΠΙΛΕΓΜΕΝΑ ΔΕΙΓΜΑΤΑ</span>
+            </span>
+            <h2 class="section-title" id="work-heading" data-i18n-html="work.titleHtml">
+              Δουλειές σε <em>web, video</em> &amp; social.
+            </h2>
+          </div>
+          <p class="section-lead" data-i18n="work.lead">
+            Ενδεικτικά projects που παρουσιάζουν την αισθητική, τη δομή και το εύρος των υπηρεσιών μου. Πάτησε σε οποιοδήποτε project για λεπτομέρειες.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+          <button type="button" class="filter-btn is-active" id="filter-all" data-filter="all" aria-pressed="true" data-i18n="work.filterAll">Όλα</button>
+          <button type="button" class="filter-btn" id="filter-web" data-filter="web" aria-pressed="false" data-i18n="work.filterWeb">Websites</button>
+          <button type="button" class="filter-btn" id="filter-video" data-filter="video" aria-pressed="false" data-i18n="work.filterVideo">Video Editing</button>
+          <button type="button" class="filter-btn" id="filter-social" data-filter="social" aria-pressed="false" data-i18n="work.filterSocial">Social Media</button>
+        </div>
+
+        <div class="work">
+          <!-- Featured Project 1: Website -->
+          <article class="project project--feature reveal" data-category="web">
+            <div class="project__media" data-open-project="web">
+              <img src="assets/img/work-website.jpg" width="1200" height="896" alt="Filia Coffee Athens responsive website mockup on a laptop" loading="lazy">
+              <span class="project__badge" data-i18n="work.p1Badge">Web Concept</span>
+            </div>
+            <div>
+              <p class="project__cat" data-i18n="work.p1Cat">Κατασκευή Ιστοσελίδας · UI/UX</p>
+              <h3 class="project__title" data-i18n="work.p1Title">Filia Coffee Athens — Επαγγελματικό Website</h3>
+              <p class="project__text" data-i18n="work.p1Text">
+                Ζεστός, σύγχρονος σχεδιασμός ιστοσελίδας για specialty coffee shop στην Αθήνα, με έμφαση στη φωτογραφία προϊόντων, καθαρή πλοήγηση μενού και mobile-first δομή.
+              </p>
+              <div class="tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Responsive</span>
+                <span class="tag">UI Design</span>
+              </div>
+              <div class="project__actions">
+                <button type="button" class="link-arrow" id="open-project-web" data-open-project="web">
+                  <span data-i18n="work.viewCase">Δες λεπτομέρειες</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Video Editing -->
+          <article class="project reveal" data-category="video">
+            <div class="project__media" data-open-project="video">
+              <img src="assets/img/work-video.jpg" width="1200" height="896" alt="Video editing timeline and cinematic color grading studio screen" loading="lazy">
+              <span class="project__badge" data-i18n="work.p2Badge">Video Edit</span>
+            </div>
+            <div>
+              <p class="project__cat" data-i18n="work.p2Cat">Video Editing · Color Grading</p>
+              <h3 class="project__title" data-i18n="work.p2Title">Urban Dusk — Promo Reel &amp; Μοντάζ</h3>
+              <p class="project__text" data-i18n="work.p2Text">
+                Σύντομο προωθητικό βίντεο με γρήγορες εναλλαγές στον ρυθμό της μουσικής, κινηματογραφική χρωματική διόρθωση (teal &amp; orange) και προσαρμογή σε 9:16 &amp; 16:9 formats.
+              </p>
+              <div class="tags">
+                <span class="tag">Video Edit</span>
+                <span class="tag">Color Grading</span>
+                <span class="tag">9:16 &amp; 16:9</span>
+              </div>
+              <div class="project__actions">
+                <button type="button" class="link-arrow" id="open-project-video" data-open-project="video">
+                  <span data-i18n="work.viewCase">Δες λεπτομέρειες</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Social Media -->
+          <article class="project reveal" style="--d: 0.1s" data-category="social">
+            <div class="project__media" data-open-project="social">
+              <img src="assets/img/work-social.jpg" width="1200" height="896" alt="Smartphones displaying cohesive social media Instagram grid alongside content calendar" loading="lazy">
+              <span class="project__badge" data-i18n="work.p3Badge">Social Media</span>
+            </div>
+            <div>
+              <p class="project__cat" data-i18n="work.p3Cat">Social Media Management · Branding</p>
+              <h3 class="project__title" data-i18n="work.p3Title">Arthur &amp; Co. — Πλάνο &amp; Αισθητική Feed</h3>
+              <p class="project__text" data-i18n="work.p3Text">
+                Ολοκληρωμένη διαχείριση λογαριασμού Instagram με μηνιαίο content calendar, ενιαία χρωματική παλέτα, εξώφυλλα Reels και εναλλαγή φωτογραφιών με τυπογραφικά posts.
+              </p>
+              <div class="tags">
+                <span class="tag">Content Plan</span>
+                <span class="tag">Grid Design</span>
+                <span class="tag">Reels</span>
+              </div>
+              <div class="project__actions">
+                <button type="button" class="link-arrow" id="open-project-social" data-open-project="social">
+                  <span data-i18n="work.viewCase">Δες λεπτομέρειες</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="work__note reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></svg>
+          <span data-i18n="work.note">Τα παραπάνω αποτελούν ενδεικτικά portfolio showcases — επικοινώνησε μαζί μου για πρόσφατα links, δείγματα μοντάζ ή μια προσαρμοσμένη πρόταση για το project σου.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         INTERACTIVE STORIES IPHONE SHOWCASE + SCROLL FILMSTRIP GALLERY
+         ================================================================== -->
+    <section class="section section--alt" id="showcase" aria-labelledby="showcase-heading">
+      <div class="container">
+        <div class="stories-grid">
+          <div class="reveal">
+            <span class="eyebrow">
+              <span class="eyebrow__num">03B</span>
+              <span class="eyebrow__rule" aria-hidden="true"></span>
+              <span data-i18n="showcase.eyebrow">REELS, STORIES &amp; FILMSTRIP</span>
+            </span>
+            <h2 class="section-title" id="showcase-heading" style="margin-top: 1rem;" data-i18n-html="showcase.titleHtml">
+              Δες τη δουλειά μου σε <em>κίνηση</em>.
+            </h2>
+            <p class="section-lead" style="margin-top: 1rem;" data-i18n="showcase.lead">
+              Πάτα δεξιά ή αριστερά στην οθόνη του κινητού όπως στα Instagram Stories, ή διάλεξε θέμα από τη λίστα. Σκρόλαρε πιο κάτω για την κινηματογραφική λωρίδα.
+            </p>
+
+            <!-- Interactive Story Selector Tabs -->
+            <div class="stories-nav" id="stories-nav" role="tablist" aria-label="Story slides">
+              <button type="button" class="story-tab is-active" data-story-index="0" role="tab" aria-selected="true">
+                <span class="story-tab__num">01</span>
+                <span>
+                  <strong>Websites &amp; UI Design</strong>
+                  <small>HTML5 · CSS3 · Responsive</small>
+                </span>
+                <svg class="story-tab__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+              </button>
+              <button type="button" class="story-tab" data-story-index="1" role="tab" aria-selected="false">
+                <span class="story-tab__num">02</span>
+                <span>
+                  <strong>Video Editing &amp; Reels</strong>
+                  <small>9:16 Reels · Color Grading · Ήχος</small>
+                </span>
+                <svg class="story-tab__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+              </button>
+              <button type="button" class="story-tab" data-story-index="2" role="tab" aria-selected="false">
+                <span class="story-tab__num">03</span>
+                <span>
+                  <strong>Διαχείριση Social Media</strong>
+                  <small>Content Plan · Grid · Stories</small>
+                </span>
+                <svg class="story-tab__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+              </button>
+              <button type="button" class="story-tab" data-story-index="3" role="tab" aria-selected="false">
+                <span class="story-tab__num">04</span>
+                <span>
+                  <strong>Behind the Scenes &amp; Gear</strong>
+                  <small>Studio · Hardware · Setup</small>
+                </span>
+                <svg class="story-tab__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+              </button>
+            </div>
+
+            <div class="stories-cta">
+              <a href="https://www.instagram.com/lorentso.al/" target="_blank" rel="noopener noreferrer" class="btn btn--accent btn--sm" id="stories-ig-cta">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <span data-i18n="showcase.igCta">Ακολούθησε @lorentso.al</span>
+              </a>
+              <a href="#contact" class="btn btn--ghost btn--sm">
+                <span data-i18n="showcase.projectCta">Ξεκίνα project</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Realistic iPhone Frame with Instagram-style Stories -->
+          <div class="iphone-wrap reveal" style="--d: 0.1s">
+            <button type="button" class="story-arrow" id="story-prev-btn" data-i18n-aria="showcase.prevLabel" aria-label="Προηγούμενο story">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+
+            <div class="iphone" id="iphone-stories">
+              <div class="iphone__screen">
+                <div class="iphone__island" aria-hidden="true"></div>
+
+                <!-- 4 Instagram Story progress bars -->
+                <div class="story-bars" id="story-bars" aria-hidden="true">
+                  <div class="story-bar is-active"><span class="story-bar__fill"></span></div>
+                  <div class="story-bar"><span class="story-bar__fill"></span></div>
+                  <div class="story-bar"><span class="story-bar__fill"></span></div>
+                  <div class="story-bar"><span class="story-bar__fill"></span></div>
+                </div>
+
+                <!-- Story Header -->
+                <div class="story-head">
+                  <span class="story-avatar" aria-hidden="true"><span>LA</span></span>
+                  <div class="story-meta">
+                    <strong>@lorentso.al</strong>
+                    <small id="story-time">Web · 2ω</small>
+                  </div>
+                  <button type="button" class="story-pause" id="story-pause-btn" data-i18n-aria="showcase.pauseLabel" aria-label="Παύση / Αναπαραγωγή story">
+                    <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+                    <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                  </button>
+                </div>
+
+                <!-- Full-bleed background visual -->
+                <div class="story-media" id="story-media">
+                  <img id="story-img" src="assets/img/work-website.jpg" alt="Story showcase visual">
+                </div>
+                <div class="story-scrim" aria-hidden="true"></div>
+
+                <!-- Left / Right Tap Zones -->
+                <button type="button" class="story-tap story-tap--prev" id="story-tap-prev" data-i18n-aria="showcase.prevLabel" aria-label="Προηγούμενο story"></button>
+                <button type="button" class="story-tap story-tap--next" id="story-tap-next" data-i18n-aria="showcase.nextLabel" aria-label="Επόμενο story"></button>
+
+                <!-- Story Caption & Actions -->
+                <div class="story-foot">
+                  <span class="story-tag" id="story-tag">Web Design</span>
+                  <h3 class="story-title" id="story-title">Καθαρά, γρήγορα websites</h3>
+                  <p class="story-desc" id="story-desc">Responsive σχεδιασμός που δείχνει επαγγελματικός σε κινητό και desktop, με καθαρό κώδικα και άμεση φόρτωση.</p>
+                  <div class="story-actions">
+                    <a href="https://www.instagram.com/lorentso.al/" target="_blank" rel="noopener noreferrer" class="story-btn story-btn--solid">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                      <span data-i18n="showcase.storyBtnIg">@lorentso.al</span>
+                    </a>
+                    <button type="button" class="story-btn" id="story-start-btn">
+                      <span data-i18n="showcase.storyBtnStart">Συνεργασία</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="story-arrow" id="story-next-btn" data-i18n-aria="showcase.nextLabel" aria-label="Επόμενο story">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Scroll-Driven Horizontal Filmstrip Gallery -->
+        <div class="filmstrip reveal" id="filmstrip">
+          <div class="filmstrip__head">
+            <span class="filmstrip__rec" data-i18n="showcase.filmstripTitle">CREATIVE FILMSTRIP · 24FPS</span>
+            <span data-i18n="showcase.filmstripHint">ΣΚΡΟΛΑΡΕ ΓΙΑ ΚΙΝΗΣΗ</span>
+          </div>
+          <div class="filmstrip__viewport">
+            <div class="filmstrip__track" id="filmstrip-track">
+              <article class="film-frame" data-open-project="web">
+                <div class="film-frame__img"><img src="assets/img/work-website.jpg" width="1200" height="896" alt="Filia Coffee website design frame" loading="lazy"></div>
+                <div class="film-frame__meta"><span class="film-frame__tc">00:01:12</span><span data-i18n="showcase.f1">WEB UI DESIGN</span></div>
+              </article>
+              <article class="film-frame" data-open-project="video">
+                <div class="film-frame__img"><img src="assets/img/work-video.jpg" width="1200" height="896" alt="Cinematic color grading studio frame" loading="lazy"></div>
+                <div class="film-frame__meta"><span class="film-frame__tc">00:02:08</span><span data-i18n="showcase.f2">COLOR GRADING</span></div>
+              </article>
+              <article class="film-frame" data-open-project="social">
+                <div class="film-frame__img"><img src="assets/img/work-social.jpg" width="1200" height="896" alt="Instagram grid and content plan frame" loading="lazy"></div>
+                <div class="film-frame__meta"><span class="film-frame__tc">00:03:24</span><span data-i18n="showcase.f3">SOCIAL GRID</span></div>
+              </article>
+              <article class="film-frame" data-open-project="web">
+                <div class="film-frame__img"><img src="assets/img/reel-mobile.jpg" width="1100" height="821" alt="Mobile-first portfolio website frame" loading="lazy"></div>
+                <div class="film-frame__meta"><span class="film-frame__tc">00:04:15</span><span data-i18n="showcase.f4">MOBILE FIRST</span></div>
+              </article>
+              <article class="film-frame" data-open-project="video">
+                <div class="film-frame__img"><img src="assets/img/reel-cinema.jpg" width="1100" height="821" alt="Studio camera rig and grading monitor frame" loading="lazy"></div>
+                <div class="film-frame__meta"><span class="film-frame__tc">00:05:09</span><span data-i18n="showcase.f5">STUDIO RIG</span></div>
+              </article>
+              <article class="film-frame" data-open-project="web">
+                <div class="film-frame__img"><img src="assets/img/hero.jpg" width="1200" height="896" alt="Developer and video editing workspace frame" loading="lazy"></div>
+                <div class="film-frame__meta"><span class="film-frame__tc">00:06:02</span><span data-i18n="showcase.f6">WORKSPACE</span></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         04 — PROCESS
+         ================================================================== -->
+    <section class="section" id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">
+            <span class="eyebrow__num">04</span>
+            <span class="eyebrow__rule" aria-hidden="true"></span>
+            <span data-i18n="process.eyebrow">ΤΡΟΠΟΣ ΕΡΓΑΣΙΑΣ</span>
+          </span>
+          <h2 class="section-title" id="process-heading" data-i18n-html="process.titleHtml">
+            Πώς δουλεύω σε κάθε <em>project</em>.
+          </h2>
+        </div>
+
+        <div class="process">
+          <div class="step reveal">
+            <span class="step__num">01</span>
+            <h3 class="step__title" data-i18n="process.s1Title">Κατανόηση &amp; Στόχος</h3>
+            <p class="step__text" data-i18n="process.s1Text">Συζητάμε τι ακριβώς χρειάζεσαι — κοινό, ύφος, χρονοδιάγραμμα — αξιοποιώντας την εμπειρία μου στην επικοινωνία με πελάτες.</p>
+          </div>
+          <div class="step reveal" style="--d: 0.08s">
+            <span class="step__num">02</span>
+            <h3 class="step__title" data-i18n="process.s2Title">Δομή &amp; Αισθητική</h3>
+            <p class="step__text" data-i18n="process.s2Text">Οργανώνουμε τη δομή της σελίδας, το storyboard του βίντεο ή το content plan των social media πριν περάσουμε στην παραγωγή.</p>
+          </div>
+          <div class="step reveal" style="--d: 0.16s">
+            <span class="step__num">03</span>
+            <h3 class="step__title" data-i18n="process.s3Title">Κώδικας &amp; Παραγωγή</h3>
+            <p class="step__text" data-i18n="process.s3Text">Γράφω καθαρή HTML/CSS, μοντάρω με προσοχή στη λεπτομέρεια και ελέγχω κάθε οθόνη ώστε το αποτέλεσμα να είναι γρήγορο και προσεγμένο.</p>
+          </div>
+          <div class="step reveal" style="--d: 0.24s">
+            <span class="step__num">04</span>
+            <h3 class="step__title" data-i18n="process.s4Title">Παράδοση &amp; Υποστήριξη</h3>
+            <p class="step__text" data-i18n="process.s4Text">Παραδίδω έτοιμα αρχεία, βοηθάω στο ανέβασμα και παραμένω διαθέσιμος για βελτιώσεις, αλλαγές και συνεχή υποστήριξη.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         05 — EXPERIENCE & EDUCATION (FULL CV)
+         ================================================================== -->
+    <section class="section section--alt" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow__num">05</span>
+              <span class="eyebrow__rule" aria-hidden="true"></span>
+              <span data-i18n="experience.eyebrow">ΕΜΠΕΙΡΙΑ &amp; ΕΚΠΑΙΔΕΥΣΗ</span>
+            </span>
+            <h2 class="section-title" id="experience-heading" data-i18n-html="experience.titleHtml">
+              Επαγγελματική πορεία &amp; <em>σπουδές</em>.
+            </h2>
+          </div>
+          <p class="section-lead" data-i18n="experience.lead">
+            Το πλήρες βιογραφικό μου με εξειδίκευση σε Remote Digital Onboarding &amp; KYC για κορυφαίες τράπεζες και επιχειρήσεις, σε συνδυασμό με τις σπουδές μου στην Πληροφορική.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="xp reveal">
+            <div class="xp__aside">
+              <span class="xp__date" data-i18n="experience.date">Ιούλ 2025 – Σήμερα</span>
+              <span class="xp__duration" data-i18n="experience.duration">1 χρόνος 5 μήνες</span>
+              <p class="xp__place" data-i18n="experience.place">Αθήνα, Αττική, Ελλάδα · Στις εγκαταστάσεις</p>
+            </div>
+
+            <div class="xp__main">
+              <h3 class="xp__role" data-i18n="experience.role">Customer Service Executive</h3>
+              <p class="xp__company">
+                IntelliSolutions <span data-i18n="experience.companyMeta">· Πλήρης απασχόληση</span>
+              </p>
+
+              <p class="xp__summary" data-i18n="experience.summary">
+                Εξειδίκευση σε διαδικασίες Remote Digital Onboarding και KYC (Know Your Customer), με διαχείριση τόσο ζωντανών ταυτοποιήσεων μέσω βίντεο (live video verifications) όσο και back-office ελέγχων εγγράφων.
+              </p>
+
+              <div class="xp__items">
+                <!-- Live Video Verification -->
+                <div class="xp__item">
+                  <span class="xp__bullet" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m23 7-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                  </span>
+                  <div>
+                    <h4 data-i18n-html="experience.r1TitleHtml">Ζωντανή Ταυτοποίηση μέσω Βίντεο <small>Τρέχων Ρόλος</small></h4>
+                    <p data-i18n="experience.r1Text">
+                      Διεξαγωγή ταυτοποιήσεων μέσω βίντεο σε πραγματικό χρόνο αποκλειστικά για τη Eurobank (Έλληνες &amp; διεθνείς πελάτες), εξασφαλίζοντας αυστηρή τήρηση των πρωτοκόλλων ασφαλείας.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Previous Video Verification -->
+                <div class="xp__item">
+                  <span class="xp__bullet" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  </span>
+                  <div>
+                    <h4 data-i18n="experience.r2Title">Προηγούμενη Εμπειρία Video Verification</h4>
+                    <p data-i18n="experience.r2Text">
+                      Πραγματοποίηση συνεδριών live video onboarding για πληθώρα χρηματοπιστωτικών οργανισμών και συνεργατών, μεταξύ των οποίων: Alpha Bank, Attica Bank, BFF Bank, ΤΜΕΔΕ (TMEDE), Worldline και WorldBridge (PayLink).
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Digital Identification & Production Clients -->
+                <div class="xp__item">
+                  <span class="xp__bullet" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></svg>
+                  </span>
+                  <div>
+                    <h4 data-i18n-html="experience.r3TitleHtml">Ψηφιακή Ταυτοποίηση &amp; Έλεγχος Εγγράφων <small>Production</small></h4>
+                    <p data-i18n="experience.r3Text">
+                      Εκτέλεση ολοκληρωμένων ελέγχων ταυτοποίησης (εγκυρότητα εγγράφων &amp; διασταύρωση στοιχείων) για εκτεταμένο χαρτοφυλάκιο πελατών σε πολλούς κλάδους:
+                    </p>
+
+                    <dl class="industries">
+                      <div class="industry">
+                        <dt data-i18n="experience.indBanking">Τράπεζες &amp; Χρηματοοικονομικά</dt>
+                        <dd>
+                          <span>Piraeus Bank</span>
+                          <span>Eurobank</span>
+                          <span>Alpha Bank</span>
+                          <span>Attica Bank</span>
+                          <span>BFF Bank</span>
+                          <span>CashPlus</span>
+                          <span data-i18n="experience.tmedeLabel">ΤΜΕΔΕ (TMEDE)</span>
+                        </dd>
+                      </div>
+                      <div class="industry">
+                        <dt data-i18n="experience.indFintech">Fintech &amp; Πληρωμές</dt>
+                        <dd>
+                          <span>Worldline</span>
+                          <span>WorldBridge (PayLink)</span>
+                        </dd>
+                      </div>
+                      <div class="industry">
+                        <dt data-i18n="experience.indGaming">Gaming &amp; Στοιχηματισμός</dt>
+                        <dd>
+                          <span>Stoiximan</span>
+                          <span>SuperBet</span>
+                          <span>OPAP</span>
+                          <span>NetBet</span>
+                        </dd>
+                      </div>
+                      <div class="industry">
+                        <dt data-i18n="experience.indTelco">Τηλεπικοινωνίες</dt>
+                        <dd>
+                          <span>Cosmote</span>
+                          <span data-i18n="experience.epicLabel">Epic (Κύπρος)</span>
+                        </dd>
+                      </div>
+                      <div class="industry">
+                        <dt data-i18n="experience.indAviation">Αερομεταφορές</dt>
+                        <dd>
+                          <span>Aegean Airlines</span>
+                        </dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+
+                <!-- Technical Support -->
+                <div class="xp__item">
+                  <span class="xp__bullet" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                  </span>
+                  <div>
+                    <h4 data-i18n="experience.r4Title">Τεχνική Υποστήριξη</h4>
+                    <p data-i18n="experience.r4Text">
+                      Επίλυση τεχνικών προβλημάτων για χρήστες σχετικά με μεταφόρτωση εγγράφων, δικαιώματα κάμερας και πλοήγηση στην πλατφόρμα.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Education -->
+        <div class="subhead reveal">
+          <h3 data-i18n="experience.eduHeading">Εκπαίδευση</h3>
+        </div>
+
+        <div class="edu-grid">
+          <article class="edu reveal">
+            <span class="edu__label" data-i18n="experience.edu1Label">ΣΑΕΚ · ΠΛΗΡΟΦΟΡΙΚΗ</span>
+            <h4 class="edu__title" data-i18n="experience.edu1Title">Εφαρμογές Πληροφορικής (ΣΑΕΚ)</h4>
+            <p class="edu__text" data-i18n="experience.edu1Text">
+              Πρόσφατος απόφοιτος με εστίαση στην ανάπτυξη ιστοσελίδων (HTML &amp; CSS), τα ψηφιακά πολυμέσα, τη λειτουργία υπολογιστικού hardware και τις σύγχρονες εφαρμογές πληροφορικής.
+            </p>
+          </article>
+
+          <article class="edu reveal" style="--d: 0.1s">
+            <span class="edu__grade" aria-label="18 out of 20">18<small>/20</small></span>
+            <span class="edu__label" data-i18n="experience.edu2Label">ΔΕΥΤΕΡΟΒΑΘΜΙΑ ΕΚΠΑΙΔΕΥΣΗ</span>
+            <h4 class="edu__title" data-i18n="experience.edu2Title">Απολυτήριο Λυκείου — Άριστα</h4>
+            <p class="edu__text" data-i18n="experience.edu2Text">
+              Αποφοίτηση με βαθμό 18/20, αποδεικνύοντας συνέπεια, οργάνωση, υπευθυνότητα και ισχυρή εργασιακή ηθική.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         06 — SKILLS & TECH STACK
+         ================================================================== -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">
+            <span class="eyebrow__num">06</span>
+            <span class="eyebrow__rule" aria-hidden="true"></span>
+            <span data-i18n="skills.eyebrow">ΔΕΞΙΟΤΗΤΕΣ &amp; ΕΝΔΙΑΦΕΡΟΝΤΑ</span>
+          </span>
+          <h2 class="section-title" id="skills-heading" data-i18n-html="skills.titleHtml">
+            Tech stack, <em>πολυμέσα</em> &amp; soft skills.
+          </h2>
+        </div>
+
+        <div class="skills">
+          <article class="skill-group reveal">
+            <div class="skill-group__head">
+              <span class="skill-group__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>
+              <h3 data-i18n="skills.g1Title">Web &amp; Τεχνολογία</h3>
+            </div>
+            <ul class="skill-list" id="skills-group-1">
+              <li>HTML5 &amp; Σημασιολογική Δομή</li>
+              <li>CSS3 &amp; Responsive Layouts</li>
+              <li>JavaScript (UI &amp; Αλληλεπίδραση)</li>
+              <li>Computer Hardware &amp; Συστήματα</li>
+              <li>Τεχνική Υποστήριξη &amp; Troubleshooting</li>
+              <li>Πλατφόρμες Digital Onboarding</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal" style="--d: 0.08s">
+            <div class="skill-group__head">
+              <span class="skill-group__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+              </span>
+              <h3 data-i18n="skills.g2Title">Πολυμέσα &amp; Social Media</h3>
+            </div>
+            <ul class="skill-list" id="skills-group-2">
+              <li>Video Editing &amp; Μοντάζ</li>
+              <li>Short-Form Βίντεο (Reels / TikTok)</li>
+              <li>Χρωματική Διόρθωση &amp; Ήχος</li>
+              <li>Διαχείριση Social Media</li>
+              <li>Content Calendar &amp; Visual Grid</li>
+              <li>Δημιουργία Ψηφιακού Περιεχομένου</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal" style="--d: 0.16s">
+            <div class="skill-group__head">
+              <span class="skill-group__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/></svg>
+              </span>
+              <h3 data-i18n="skills.g3Title">Επικοινωνία &amp; KYC</h3>
+            </div>
+            <ul class="skill-list" id="skills-group-3">
+              <li>Remote Digital Onboarding &amp; KYC</li>
+              <li>Live Video Verification</li>
+              <li>Έλεγχος Εγκυρότητας Εγγράφων</li>
+              <li>Κατανόηση Αναγκών Πελάτη</li>
+              <li>Ομαδικότητα &amp; Συνέπεια</li>
+              <li>Δίγλωσση Επικοινωνία (Ελληνικά / Αγγλικά)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         07 — CONTACT
+         ================================================================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="reveal">
+            <span class="eyebrow">
+              <span class="eyebrow__num">07</span>
+              <span class="eyebrow__rule" aria-hidden="true"></span>
+              <span data-i18n="contact.eyebrow">ΕΠΙΚΟΙΝΩΝΙΑ</span>
+            </span>
+            <h2 class="contact__title" id="contact-heading" data-i18n-html="contact.titleHtml">
+              Ας φτιάξουμε κάτι <em>όμορφο</em> μαζί.
+            </h2>
+            <p class="contact__lead" data-i18n="contact.lead">
+              Είτε αναζητάτε έναν αφοσιωμένο ασκούμενο για την ομάδα σας, είτε χρειάζεστε website, video edit ή διαχείριση social media — θα χαρώ να τα πούμε.
+            </p>
+
+            <div class="contact__links">
+              <div class="contact-link contact-link--split">
+                <a href="mailto:lorentsoaligia@gmail.com" class="contact-link__main" id="contact-email-link">
+                  <span class="contact-link__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  </span>
+                  <div style="min-width:0;">
+                    <small data-i18n="contact.emailSub">Άμεσο Email</small>
+                    <strong>lorentsoaligia@gmail.com</strong>
+                  </div>
+                </a>
+                <button type="button" class="copy-btn" id="contact-copy-email" data-copy-email="lorentsoaligia@gmail.com">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                  <span data-i18n="contact.copyBtn">Αντιγραφή</span>
+                </button>
+              </div>
+
+              <a href="https://www.instagram.com/lorentso.al/" target="_blank" rel="noopener noreferrer" class="contact-link" id="contact-instagram">
+                <span class="contact-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </span>
+                <div>
+                  <small data-i18n="contact.instagramSub">Instagram · Reels &amp; Visuals</small>
+                  <strong>@lorentso.al</strong>
+                </div>
+                <svg class="contact-link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              </a>
+
+              <a href="https://www.linkedin.com/in/lorentso-aligia-5568723a0/" target="_blank" rel="noopener noreferrer" class="contact-link" id="contact-linkedin">
+                <span class="contact-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.32-.03-3.02-1.84-3.02-1.84 0-2.12 1.44-2.12 2.92V21h-4V9z"/></svg>
+                </span>
+                <div>
+                  <small data-i18n="contact.linkedinSub">Επαγγελματικό προφίλ</small>
+                  <strong>LinkedIn — Lorentso Aligia</strong>
+                </div>
+                <svg class="contact-link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              </a>
+
+              <button type="button" class="contact-link" id="contact-print-cv" data-print-cv style="text-align: left; width: 100%;">
+                <span class="contact-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6m-3 3 3 3 3-3"/></svg>
+                </span>
+                <div>
+                  <small data-i18n="contact.cvSub">Βιογραφικό (EL / EN)</small>
+                  <strong data-i18n="contact.cvTitle">Εκτύπωση ή αποθήκευση σε PDF</strong>
+                </div>
+                <svg class="contact-link__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+              </button>
+
+              <div class="contact-link">
+                <span class="contact-link__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div>
+                  <small data-i18n="contact.locSub">Βάση &amp; Διαθεσιμότητα</small>
+                  <strong data-i18n="contact.locTitle">Αθήνα, Αττική · On-site &amp; Remote</strong>
+                </div>
+                <span class="contact-time" id="contact-clock">--:-- EET</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="form reveal" id="contact-form" method="POST" novalidate style="--d: 0.1s">
+            <!-- Anti-spam honeypot -->
+            <input type="text" name="_honey" id="contact-honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="form__row">
+              <div class="field">
+                <label for="contact-name" data-i18n="contact.formName">Ονοματεπώνυμο</label>
+                <input type="text" id="contact-name" name="name" required autocomplete="name" data-i18n-placeholder="contact.formNamePh" placeholder="π.χ. Νίκος Παπαδόπουλος">
+                <span class="field__error" data-i18n="contact.errName">Παρακαλώ συμπλήρωσε το όνομά σου.</span>
+              </div>
+              <div class="field">
+                <label for="contact-email" data-i18n="contact.formEmail">Email</label>
+                <input type="email" id="contact-email" name="email" required autocomplete="email" data-i18n-placeholder="contact.formEmailPh" placeholder="name@example.com">
+                <span class="field__error" data-i18n="contact.errEmail">Παρακαλώ βάλε ένα έγκυρο email.</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="contact-topic" data-i18n="contact.formTopic">Θέμα</label>
+              <select id="contact-topic" name="topic">
+                <option value="internship" data-i18n="contact.topicInternship">Πρακτική Άσκηση / Θέση Εργασίας</option>
+                <option value="web" data-i18n="contact.topicWeb">Κατασκευή Website</option>
+                <option value="video" data-i18n="contact.topicVideo">Video Editing</option>
+                <option value="social" data-i18n="contact.topicSocial">Διαχείριση Social Media</option>
+                <option value="other" data-i18n="contact.topicOther">Άλλη Συνεργασία</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="contact-message" data-i18n="contact.formMessage">Μήνυμα</label>
+              <textarea id="contact-message" name="message" required data-i18n-placeholder="contact.formMessagePh" placeholder="Πες μου λίγα λόγια για τη θέση ή το project σου..."></textarea>
+              <span class="field__error" data-i18n="contact.errMessage">Γράψε ένα σύντομο μήνυμα (τουλάχιστον 10 χαρακτήρες).</span>
+            </div>
+
+            <button type="submit" class="btn btn--accent" id="contact-submit">
+              <span id="contact-submit-label" data-i18n="contact.formSubmit">Αποστολή μηνύματος</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </button>
+
+            <p class="form__note" data-i18n="contact.formNote">Τα μηνύματα αποστέλλονται απευθείας στο lorentsoaligia@gmail.com.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__big" aria-hidden="true">LORENTSO ALIGIA</div>
+      <div class="footer__inner">
+        <p data-i18n="footer.copy">© 2026 Lorentso Aligia. Με επιφύλαξη παντός δικαιώματος.</p>
+        <div class="footer__links">
+          <a href="#about" data-i18n="nav.about">Σχετικά</a>
+          <a href="#services" data-i18n="nav.services">Υπηρεσίες</a>
+          <a href="#work" data-i18n="nav.work">Δουλειές</a>
+          <a href="#experience" data-i18n="nav.experience">Εμπειρία &amp; CV</a>
+          <a href="mailto:lorentsoaligia@gmail.com">Email</a>
+          <a href="https://www.instagram.com/lorentso.al/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.linkedin.com/in/lorentso-aligia-5568723a0/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <a href="#top" class="footer__top" id="back-to-top">
+          <span data-i18n="footer.top">Επιστροφή στην κορυφή</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       PROJECT DETAIL MODAL
+       ==================================================================== -->
+  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog">
+      <button type="button" class="modal__close" id="modal-close" data-i18n-aria="work.modalClose" aria-label="Κλείσιμο παραθύρου">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal__media">
+        <img id="modal-img" src="assets/img/work-website.jpg" alt="">
+      </div>
+      <div class="modal__body">
+        <p class="project__cat" id="modal-cat"></p>
+        <h3 class="modal__title" id="modal-title"></h3>
+        <p class="modal__desc" id="modal-desc"></p>
+
+        <div class="modal__cols">
+          <div>
+            <h4 class="modal__sub" data-i18n="work.modalDeliverables">Τι περιλαμβάνει</h4>
+            <ul class="modal__list" id="modal-deliverables"></ul>
+          </div>
+          <div>
+            <h4 class="modal__sub" data-i18n="work.modalTools">Εργαλεία &amp; Εστίαση</h4>
+            <div class="tags" id="modal-tools" style="margin-top: 0;"></div>
+          </div>
+        </div>
+
+        <div class="modal__foot">
+          <button type="button" class="btn btn--accent btn--sm" id="modal-cta">
+            <span data-i18n="work.modalCta">Θέλω κάτι παρόμοιο</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick Contact Menu -->
+  <div class="fab" id="fab-contact">
+    <div class="fab__menu" id="fab-menu" aria-hidden="true">
+      <a href="https://www.instagram.com/lorentso.al/" target="_blank" rel="noopener noreferrer" class="fab__item" id="fab-instagram">
+        <span data-i18n="fab.instagram">Instagram DM (@lorentso.al)</span>
+        <span class="fab__item-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </span>
+      </a>
+      <a href="mailto:lorentsoaligia@gmail.com" class="fab__item" id="fab-email">
+        <span data-i18n="fab.email">Στείλε Email</span>
+        <span class="fab__item-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </span>
+      </a>
+      <a href="https://www.linkedin.com/in/lorentso-aligia-5568723a0/" target="_blank" rel="noopener noreferrer" class="fab__item" id="fab-linkedin">
+        <span data-i18n="fab.linkedin">LinkedIn Προφίλ</span>
+        <span class="fab__item-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.5c0-1.32-.03-3.02-1.84-3.02-1.84 0-2.12 1.44-2.12 2.92V21h-4V9z"/></svg>
+        </span>
+      </a>
+    </div>
+
+    <button type="button" class="fab__trigger" id="fab-toggle" aria-expanded="false" aria-controls="fab-menu" data-i18n-aria="fab.openLabel" aria-label="Γρήγορη επικοινωνία">
+      <svg class="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <!-- Toast feedback -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+    <span id="toast-msg"></span>
+  </div>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
